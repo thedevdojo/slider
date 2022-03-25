@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides</title>
+
+    <script src="./slides.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="http://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+    <style>
+        html{
+            font-family: 'Proxima Nova', sans-serif;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center w-screen h-screen">
+
+    <div class="w-[1280px] h-[720px]">
+        <div
+            id="app"
+            x-data
+            x-slider="{ orientation: 'vertical' }"
+            >
+
+            <div x-slider-controls></div>
+
+            <div x-slide>
+                <img src="https://images.unsplash.com/photo-1572025442646-866d16c84a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" class="w-full h-full absolute inset-0 object-cover select-none">
+                <div class="select-none bg-gray-900 opacity-50 absolute inset-0 w-full h-full"></div>
+                <h1 class="text-8xl relative font-extrabold text-white">1</h1>
+            </div>
+
+            <div x-slide>
+                <img src="https://images.unsplash.com/photo-1508682641856-78948a748357?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" class="w-full h-full absolute inset-0 object-cover">
+                <div class="select-none bg-gray-900 opacity-50 absolute inset-0 w-full h-full"></div>
+                <h1 class="text-8xl relative font-extrabold text-white">2</h1>
+            </div>
+            <div x-slide>
+                <img src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" class="w-full h-full absolute inset-0 object-cover">
+                <div class="select-none bg-gray-900 opacity-50 absolute inset-0 w-full h-full"></div>
+                <h1 class="text-8xl relative font-extrabold text-white">3</h1>
+            </div>
+            <div x-slide>
+                <img src="https://images.unsplash.com/photo-1505159940484-eb2b9f2588e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" class="w-full h-full absolute inset-0 object-cover">
+                <div class="select-none bg-gray-900 opacity-50 absolute inset-0 w-full h-full"></div>
+                <h1 class="text-8xl relative font-extrabold text-white">4</h1>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
